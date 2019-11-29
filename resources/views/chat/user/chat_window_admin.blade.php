@@ -34,8 +34,7 @@ $res = DB::table('users')
 
 //borro chat anterior
 $filename = $_SERVER['DOCUMENT_ROOT']."/chat/$id.html";
-if( file_exists($filename))
-  unlink($filename);
+unlink($filename);
  ?>
 @include('chat.admin.content.chat_window_admin_content')
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

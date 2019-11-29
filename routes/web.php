@@ -476,11 +476,11 @@ Route::get('/documents/user/show_document_user', function () {
   return view('/documents/user/show_document_user');
 });
 
-Route::get('/chat/user/chat_window_user', function () {
+Route::get('/chat/user/available_chatters', function () {
   if (!isset(Auth::user()->name))
     return view('no_access');
   else
-    return view('/chat/user/chat_window_user');
+    return view('/chat/user/available_chatters');
 });
 
 Route::get('/chat/admin/chat_window_admin', function () {
@@ -492,16 +492,23 @@ Route::get('/chat/admin/chat_window_admin', function () {
     return view('/chat/admin/chat_window_admin');
 });
 
-Route::post('/chat/admin/chat_post', function () {
+Route::post('/chat/admin/chat_post_admin', function () {
   if (!isset(Auth::user()->name))
     return view('no_access');
   elseif (Auth::user()->is_admin == 0)
     return view('no_access');
   else
-    return view('/chat/admin/chat_post');
+    return view('/chat/admin/chat_post_admin');
 });
 
-
+Route::get('/chat/admin/unset_chat_available', function () {
+  if (!isset(Auth::user()->name))
+    return view('no_access');
+  elseif (Auth::user()->is_admin == 0)
+    return view('no_access');
+  else
+    return view('/chat/admin/unset_chat_available');
+});
 
 
 Route::get('/mail/admin/mail_form', function () {
