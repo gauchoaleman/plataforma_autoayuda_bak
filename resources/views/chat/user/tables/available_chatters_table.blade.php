@@ -20,7 +20,7 @@
   {{$user->name}}
   </td>
   <td>
-  <a class='card-link' href="/chat/user/chat_window_user?admin_id={{$user->id}}"><img src='http://{{$_SERVER['HTTP_HOST']}}/img/chat_table.png'></a>
+  <a class='card-link' target="popup" href="/chat/user/chat_window_user?admin_id={{$user->id}}"><img src='http://{{$_SERVER['HTTP_HOST']}}/img/chat_table.png'></a>
   </td>
   </tr>
 @endforeach

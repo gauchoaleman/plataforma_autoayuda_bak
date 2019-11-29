@@ -501,6 +501,20 @@ Route::post('/chat/admin/chat_post_admin', function () {
     return view('/chat/admin/chat_post_admin');
 });
 
+Route::get('/chat/user/chat_window_user', function () {
+  if (!isset(Auth::user()->name))
+    return view('no_access');
+  else
+    return view('/chat/user/chat_window_user');
+});
+
+Route::post('/chat/user/chat_post_user', function () {
+  if (!isset(Auth::user()->name))
+    return view('no_access'); 
+  else
+    return view('/chat/user/chat_post_user');
+});
+
 Route::get('/chat/admin/unset_chat_available', function () {
   if (!isset(Auth::user()->name))
     return view('no_access');
