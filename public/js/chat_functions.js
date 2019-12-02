@@ -1,7 +1,7 @@
 function load_log_admin(admin_id){
     var oldscrollHeight = $("#chatbox").attr("scrollHeight") - 20; //Scroll height before the request
     $.ajax({
-        url:'chat/'+admin_id+'.start',
+        url:'/chat/'+admin_id+'.start',
         type:'HEAD',
         error: function()
         {
