@@ -9,8 +9,8 @@ function load_log_admin(admin_id){
         },
         success: function()
         {
-          var audio = new Audio('/sound/ding.wav');
-          audio.play();
+          //Mostrar notificación
+
         }
     });
 

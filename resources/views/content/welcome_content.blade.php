@@ -2,7 +2,7 @@
 <div class="container">
 
 <div class="title m-b-md" style="color:orange" align="center" valign="top">
-Desde tu lugar se puede prevenir<br>
+<font face="optima">Desde tu lugar se puede prevenir</font><br>
 </div>
 <hr>
 <div class="title m-b-md" style="color:orange" align="center" valign="top"><h3>Quienes somos</h3></div>
