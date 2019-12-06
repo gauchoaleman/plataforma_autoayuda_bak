@@ -12,5 +12,7 @@
         <link rel="stylesheet" href="/css/bootstrap_changes.css" crossorigin="anonymous">
         <link rel="stylesheet" href="/css/custom_styles.css" crossorigin="anonymous">
         <link rel="stylesheet" href="/css/chat_styles.css" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/push.js/0.0.11/push.min.js"></script>
+
     </head>
     <body>

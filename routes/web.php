@@ -510,7 +510,7 @@ Route::get('/chat/user/chat_window_user', function () {
 
 Route::post('/chat/user/chat_post_user', function () {
   if (!isset(Auth::user()->name))
-    return view('no_access'); 
+    return view('no_access');
   else
     return view('/chat/user/chat_post_user');
 });
@@ -524,6 +524,14 @@ Route::get('/chat/admin/unset_chat_available', function () {
     return view('/chat/admin/unset_chat_available');
 });
 
+Route::get('/chat/admin/delete_start_file', function () {
+  if (!isset(Auth::user()->name))
+    return view('no_access');
+  elseif (Auth::user()->is_admin == 0)
+    return view('no_access');
+  else
+    return view('/chat/admin/delete_start_file');
+});
 
 Route::get('/mail/admin/mail_form', function () {
   if (!isset(Auth::user()->name))

@@ -10,7 +10,9 @@
         <link rel="stylesheet" href="/css/bootstrap_changes.css" crossorigin="anonymous">
         <link rel="stylesheet" href="/css/custom_styles.css" crossorigin="anonymous">
         <link rel="stylesheet" href="/css/chat_styles.css" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/push.js/0.0.11/push.min.js"></script>
         <script src="/js/chat_functions.js"></script>
+
         <script type="text/javascript">
           setInterval(load_log_admin, 250,{{Auth::user()->id}});
           window.addEventListener("unload", function(event) { $.ajax(
