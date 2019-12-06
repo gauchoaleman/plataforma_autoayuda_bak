@@ -7,9 +7,7 @@ Crear usuario admin con clave adminspassword en mysql: CREATE USER 'admin'@'loca
 
 Crear base de datos autoayuda en mysql: CREATE DATABASE autoayuda;
 
-Ejecutar las queries del directorio /sql:
-crear tablas.sql
-datos.sql
+Ejecutar las queries del directorio /sql: tablas_y_datos.sql
 
 Si hace falta, ejecutar estas 2 líneas:
 
