@@ -10,13 +10,14 @@ function load_log_admin(admin_id){
         success: function()
         {
           //Mostrar notificación
-          Push.create('Hi there!', {
+          Push.create('Atención', {
             body: 'Tiene un compañero de chat.',
-            icon: 'img/chat.png',
+
             timeout: 8000,               // Timeout before notification closes automatically.
             vibrate: [100, 100, 100],    // An array of vibration pulses for mobile devices.
             onClick: function() {
         // Callback for when the notification is clicked.
+            //window.open("/chat/admin/chat_window_admin", "_self");
             }
           });
         // Borrar archivo start
