@@ -16,6 +16,7 @@ $content.= "Mensaje: $message";
 $headers = "From: contactos@autoayuda.com";
 mail($to,$subject,$content,$headers);
 ?>
+<div class='high_text' style='color:orange'>Contacto enviado</div>
 @include('content/welcome_content')
 @include('includes/bottom_bar')
 @include('includes/bottom')

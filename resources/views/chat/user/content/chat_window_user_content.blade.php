@@ -2,6 +2,7 @@
 <div id="wrapper">
   <div id="menu">
         <p class="welcome">Hola {{Auth::user()->name}}<b></b></p>
+        <p class="logout"><a href="#" onclick="window.close();">Abandonar chat</a></p>
         <div style="clear:both"></div>
     </div>
 
