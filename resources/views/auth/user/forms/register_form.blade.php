@@ -62,7 +62,7 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="send-mail" class="col-md-4 col-form-label text-md-right">¿Desea recibir mails con información de eventos?</label>
+                            <label for="send-mail" class="col-md-4 col-form-label text-md-right">¿Desea recibir mails con información?</label>
 
                             <div class="col-md-6">
                                 <input  type="checkbox" class="form-control" name="send_mail" checked>
