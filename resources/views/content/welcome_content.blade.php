@@ -1,12 +1,14 @@
 <script>
 Push.Permission.request();
 </script>
+<div class="title m-b-md" style="color:orange" align="center" valign="top">
+  <hr>
+<font face="optima">Desde tu lugar se puede prevenir</font>
+<hr>
+</div><br>
 <img src="/img/collage.png" width=100%>
 <div class="container">
 
-<div class="title m-b-md" style="color:orange" align="center" valign="top">
-<font face="optima">Desde tu lugar se puede prevenir</font><br>
-</div>
 <hr>
 <div class="title m-b-md" style="color:orange" align="center" valign="top"><h3>Quienes somos</h3></div>
 <h4>
